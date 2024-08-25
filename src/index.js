@@ -20,7 +20,7 @@ const quiz=require("./controller/displayQuiz.controller.js")
 app.use("/quiz",quiz)
 
 const getquiz = require("./controller/quizAdd.controller.js")
-app.use("/quiz",getquiz)
+app.use("/quiz/:id",getquiz)
 
 const user=require("./controller/auth.controller.js")
 app.use("/user",user)
